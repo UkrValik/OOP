@@ -1,4 +1,3 @@
-﻿  laba1.cpp
-d:\oop\laba1\laba1\b-level.h(10): warning C4200: нестандартное расширение: массив нулевого размера в структуре (объединении)
-  d:\oop\laba1\laba1\b-level.h(10): note: Этот член будет пропущен конструктором, установленным по умолчанию, или оператором назначения копии или перемещения
+﻿  C-level.cpp
+d:\oop\laba1\laba1\c-level.cpp(6): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
   laba1.vcxproj -> D:\OOP\laba1\Debug\laba1.exe
