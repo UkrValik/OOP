@@ -6,10 +6,12 @@ Points::Points() {
 	srand(time(0));
 	n = rand() % 15 + 2;
 	A.resize(n);
+	f = new int[n];
 	for (int i = 0; i < n; ++i) {
 		A[i].first = rand() % 31 - 15;
 		A[i].second = rand() % 31 - 15;
-		cout << A[i].first << " " << A[i].second << endl;
+		f[i] = i;
+		cout << A[i].first << " " << A[i].second << " " << f[i] << endl;
 	}
 	cout << "Object Points has been created." << endl;
 }
@@ -17,11 +19,14 @@ Points::Points() {
 Points::Points(const Points& pts) {
 	n = pts.n;
 	A.resize(n);
+	f = new int[n];
 	for (int i = 0; i < n; ++i) {
 		A[i].first = -pts.A[i].first;
 		A[i].second = -pts.A[i].second;
+		f[i] = pts.f[i];
+		cout << f[i] << " ";
 	}
-	cout << "Object Points has been copied." << endl;
+	cout << "\nObject Points has been copied." << endl;
 }
 
 void Points::divider() {
@@ -61,5 +66,8 @@ void Points::print() {
 }
 
 Points::~Points() {
-	
+	if (f) {
+		delete f;
+		cout << "Object deleted\n";
+	}
 }

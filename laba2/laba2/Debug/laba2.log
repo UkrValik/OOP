@@ -1,0 +1,3 @@
+﻿  B-level.cpp
+d:\oop\laba2\laba2\b-level.cpp(40): warning C4715: Fraction::binary_gcd: значение возвращается не при всех путях выполнения
+  laba2.vcxproj -> D:\OOP\laba2\Debug\laba2.exe

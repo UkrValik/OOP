@@ -11,6 +11,7 @@ class Points {
 private:
 	int n;
 	vector<pair<int, int> > A;
+	int *f;
 public:
 	Points();
 	Points(const Points&);
