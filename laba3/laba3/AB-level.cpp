@@ -7,6 +7,11 @@ Math_function::Math_function()
 	cout << "Math_function created.\n";
 }
 
+Math_function::~Math_function()
+{
+	cout << "Math_function deleted.\n";
+}
+
 Type1::Type1() 
 {
 	cout << "Input x, y: ";
@@ -14,9 +19,14 @@ Type1::Type1()
 	cout << "Type1 function created.\n";
 }
 
-float Type1::function_meaning()
+double Type1::function_meaning()
 {
 	return x * x + sqrt(3 * y * y * y);
+}
+
+Type1::~Type1()
+{
+	cout << "Type1 deleted.\n";
 }
 
 Type2::Type2()
@@ -26,7 +36,12 @@ Type2::Type2()
 	cout << "Type2 function created.\n";
 }
 
-float Type2::function_meaning()
+double Type2::function_meaning()
 {
 	return 3 * x * x * pow(z, 1.0 / 3.0) + pow(exp(1.0), sqrt(4 * y));
+}
+
+Type2::~Type2()
+{
+	cout << "Type2 deleted.\n";
 }
